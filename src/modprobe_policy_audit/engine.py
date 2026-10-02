@@ -1,5 +1,4 @@
 """Inspect selected modprobe configuration, never insert/remove kernel modules."""
-import fnmatch
 import posixpath
 import re
 import shlex
@@ -35,8 +34,11 @@ def analyze(snapshot):
             if kind=='alias':
                 if len(tokens)!=3:raise InputError('alias requires pattern and real module')
                 pattern=tokens[1].replace('-','_');target=module(tokens[2]);aliases[pattern]=(target,where)
-                if pattern in ('*','?*'):report.add('alias_scope','FAIL',where,'Global alias redirects all module requests')
-                else:report.add('alias_scope','PASS',where,'Explicit alias declaration')
+                if set(pattern).issubset({'*','?'}) and '*' in pattern and pattern.count('?')<=1:
+                    report.add('alias_scope','FAIL',where,'Global alias redirects all nonempty module requests')
+                elif not pattern or pattern[0] in '*?[' or '[' in pattern or '\\' in pattern:
+                    report.add('alias_scope','OPEN',where,'Alias pattern scope outside the definite literal-prefix profile')
+                else:report.add('alias_scope','PASS',where,'Literal-prefix alias declaration; actual matching/resolution is not simulated')
                 continue
             mod=module(tokens[1]);rest=tokens[2:]
             if kind=='blacklist':

@@ -3,5 +3,6 @@
   "package": "modprobe_policy_audit",
   "command": "modprobe-policy-audit",
   "license": "MIT",
-  "description": "Module policy aliases, dependencies and disablement audit"
+  "description": "Module policy aliases, dependencies and disablement audit",
+  "version": "0.1.1"
 }

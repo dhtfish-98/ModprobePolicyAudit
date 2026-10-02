@@ -1,14 +1,20 @@
 {
-  "project": "ModprobePolicyAudit",
+  "name": "ModprobePolicyAudit",
+  "group": "host",
   "status": "PASS",
-  "test_count": 13,
-  "wheel": "modprobe_policy_audit-0.1.0-py3-none-any.whl",
-  "wheel_sha256": "7d392f0847ff516fd3d14e5d4f5d24ecd41b92345d9aaa99ca26cd1ac1718162",
-  "verification": "Local supported and malformed input tests, wheel build, separate install, imported package origin and CLI checks",
-  "reproduction": [
-    "python -m pip install .",
-    "python -m unittest discover -s tests -v",
-    "python -m pip wheel --no-deps --wheel-dir artifacts ."
-  ],
-  "limits": "Point-in-time engineering evidence only; CVP qualification and approval remain OPEN"
+  "version": "0.1.1",
+  "test_count": 18,
+  "source_code_sha256": "069bcdbe3717c20bf7f5f97d62153c920b4807430fcd482196af822d6efc1b26",
+  "wheel_sha256": "c8dfca0033e01a121754a7df0347b4a534fbc2b4dfb274174a25d0d5262442b4",
+  "source_wheel_installed_bytes": "PASS",
+  "licenses": "PASS",
+  "dependency_check": "PASS",
+  "verified_utc": "2026-10-02T11:20:00.246469+00:00",
+  "wheel": "modprobe_policy_audit-0.1.1-py3-none-any.whl",
+  "verification": "Fresh per-project environment; wheel/source/installed runtime byte comparison; complete installed unittest suite; pip dependency check; license byte checks",
+  "runtime_platform": "Python 3.14 macOS arm64; remote Linux CI recorded separately",
+  "application_qualification": "OPEN",
+  "whole_upstream_equivalence": "OPEN",
+  "effective_deployed_protection": "OPEN",
+  "record_kind": "Current repaired release verification"
 }
