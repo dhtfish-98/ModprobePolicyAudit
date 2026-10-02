@@ -1,3 +1,5 @@
+# Author: dhtfish98
+# Copyright (c) 2026 dhtfish98
 import unittest
 from modprobe_policy_audit import analyze
 from modprobe_policy_audit.common import InputError

@@ -1,5 +1,9 @@
 # ModprobePolicyAudit
 
+Version **0.1.2**.
+
+New implementation author: **dhtfish98**. Copyright (c) 2026 dhtfish98 applies to the new implementation code. Upstream policy data, original notices and source references retain their original attribution.
+
 Module policy aliases, dependencies and disablement audit. Complete independent **new scope**, not the whole upstream system rewritten.
 
 Input: `{"files":{"/etc/modprobe.d/99-policy.conf":"blacklist old-fs\ninstall old_fs /bin/false"},"disabled_modules":["old-fs"],"loaded_modules":[]}`. Five default modprobe.d directory priorities and lexical file order are resolved; hyphens/underscores normalize. All seven documented command forms are parsed: alias, blacklist, install, remove, options, softdep, weakdep. Checks cover global/disabled-target/alias-chain redirects, exact blocking stubs, contradictory options, dependency cycles/depth/budget, softdep override precedence and supplied loaded-module state. Blacklist alone FAILs a declared disablement goal because it does not block direct module load. Even a PASS only demonstrates declared modprobe policy; direct privileged loading, built-ins, initramfs and module-provided aliases remain OPEN. Arbitrary shell overrides and module-specific option meanings are OPEN and never executed. Disablement targets are caller policy, not an official list of universally unsafe modules.

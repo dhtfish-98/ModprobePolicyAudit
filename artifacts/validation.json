@@ -1,20 +1,13 @@
 {
   "name": "ModprobePolicyAudit",
-  "group": "host",
+  "version": "0.1.2",
   "status": "PASS",
-  "version": "0.1.1",
   "test_count": 18,
-  "source_code_sha256": "069bcdbe3717c20bf7f5f97d62153c920b4807430fcd482196af822d6efc1b26",
-  "wheel_sha256": "c8dfca0033e01a121754a7df0347b4a534fbc2b4dfb274174a25d0d5262442b4",
-  "source_wheel_installed_bytes": "PASS",
-  "licenses": "PASS",
-  "dependency_check": "PASS",
-  "verified_utc": "2026-10-02T11:20:00.246469+00:00",
-  "wheel": "modprobe_policy_audit-0.1.1-py3-none-any.whl",
-  "verification": "Fresh per-project environment; wheel/source/installed runtime byte comparison; complete installed unittest suite; pip dependency check; license byte checks",
-  "runtime_platform": "Python 3.14 macOS arm64; remote Linux CI recorded separately",
+  "wheel_sha256": "c6912df020e41a3637509b981ab2068e5ec20235a07188a175c0c768ae8d1030",
+  "author": "dhtfish98",
+  "wheel": "modprobe_policy_audit-0.1.2-py3-none-any.whl",
+  "verification": "Rebuilt wheel, separate installed tests, package author metadata, runtime and retained third-party notice byte verification",
+  "record_kind": "Attribution patch verification",
   "application_qualification": "OPEN",
-  "whole_upstream_equivalence": "OPEN",
-  "effective_deployed_protection": "OPEN",
-  "record_kind": "Current repaired release verification"
+  "whole_upstream_equivalence": "OPEN"
 }

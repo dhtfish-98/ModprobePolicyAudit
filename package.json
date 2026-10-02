@@ -4,5 +4,6 @@
   "command": "modprobe-policy-audit",
   "license": "MIT",
   "description": "Module policy aliases, dependencies and disablement audit",
-  "version": "0.1.1"
+  "version": "0.1.2",
+  "author": "dhtfish98"
 }
