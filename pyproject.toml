@@ -1,0 +1,14 @@
+[build-system]
+requires = []
+build-backend = "backend"
+backend-path = ["."]
+
+[project]
+name = "modprobe-policy-audit"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Module policy aliases, dependencies and disablement audit"
+license = {text = "MIT"}
+
+[project.scripts]
+modprobe-policy-audit = "modprobe_policy_audit.cli:main"

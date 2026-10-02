@@ -1,0 +1,8 @@
+{
+  "files": {
+    "/etc/modprobe.d/99-policy.conf": "blacklist old-fs\ninstall old_fs /bin/false"
+  },
+  "disabled_modules": [
+    "old-fs"
+  ]
+}

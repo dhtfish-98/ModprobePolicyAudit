@@ -1,0 +1,14 @@
+{
+  "project": "ModprobePolicyAudit",
+  "status": "PASS",
+  "test_count": 13,
+  "wheel": "modprobe_policy_audit-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "7d392f0847ff516fd3d14e5d4f5d24ecd41b92345d9aaa99ca26cd1ac1718162",
+  "verification": "Local supported and malformed input tests, wheel build, separate install, imported package origin and CLI checks",
+  "reproduction": [
+    "python -m pip install .",
+    "python -m unittest discover -s tests -v",
+    "python -m pip wheel --no-deps --wheel-dir artifacts ."
+  ],
+  "limits": "Point-in-time engineering evidence only; CVP qualification and approval remain OPEN"
+}
