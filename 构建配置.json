@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "ModprobePolicyAudit",
+  "author": "dhtfish98",
+  "kind": "python-wheel",
+  "base_public_commit": "1748a0448911951c46e554ed5e5a4c520e6f2502",
+  "restored_inputs": [
+    {
+      "original": "COPYRIGHT.md",
+      "stored": "项目文档/COPYRIGHT.md",
+      "sha256": "0989a74acaf06c56e82a734d27342f0bdf47258b708e88f57de464d95c094502"
+    },
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "e55d07bca9c618955cd5a6e7a671ee1f66555cad0a83205e3e622a1f4aeb033b"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "7c8259b1fe125f71244d4916c514c891b396a4d3c7f271502d277939bbced43f"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "bded421e4b095033b499f3f0793b594d0f5ebaeb7c1681d653c484aa2d98209d"
+    }
+  ],
+  "platform_entries": []
+}
