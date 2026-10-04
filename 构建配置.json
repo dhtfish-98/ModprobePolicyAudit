@@ -6,6 +6,16 @@
   "base_public_commit": "1748a0448911951c46e554ed5e5a4c520e6f2502",
   "restored_inputs": [
     {
+      "original": "ATTRIBUTION_UPDATE_20261002.json",
+      "stored": "项目文档/ATTRIBUTION_UPDATE_20261002.json",
+      "sha256": "8b86a76d6680ea404890a6785c190bd5a39a7c747d06a4284e2807341befd278"
+    },
+    {
+      "original": "BUILD_PROVENANCE.json",
+      "stored": "项目文档/BUILD_PROVENANCE.json",
+      "sha256": "f5a8086cacd1ad8ef930ddbaca5838df2639b69936343c1763b0ef996369c235"
+    },
+    {
       "original": "COPYRIGHT.md",
       "stored": "项目文档/COPYRIGHT.md",
       "sha256": "0989a74acaf06c56e82a734d27342f0bdf47258b708e88f57de464d95c094502"
@@ -26,9 +36,24 @@
       "sha256": "f264b357abd1c9bac0321ab4d2e9a289c947e5d7d0d4c8339effc7882c524acf"
     },
     {
+      "original": "REAUDIT_20261002.json",
+      "stored": "项目文档/REAUDIT_20261002.json",
+      "sha256": "cbbc879b3b7497f506da1d120aa112d0a31bd4bdffdfa09f808a9025681f159e"
+    },
+    {
       "original": "VALIDATION.md",
       "stored": "项目文档/VALIDATION.md",
       "sha256": "bded421e4b095033b499f3f0793b594d0f5ebaeb7c1681d653c484aa2d98209d"
+    },
+    {
+      "original": "artifacts/local-validation.json",
+      "stored": "项目文档/artifacts/local-validation.json",
+      "sha256": "8b86a76d6680ea404890a6785c190bd5a39a7c747d06a4284e2807341befd278"
+    },
+    {
+      "original": "artifacts/validation.json",
+      "stored": "项目文档/artifacts/validation.json",
+      "sha256": "8b86a76d6680ea404890a6785c190bd5a39a7c747d06a4284e2807341befd278"
     }
   ],
   "platform_entries": []
