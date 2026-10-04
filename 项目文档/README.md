@@ -12,7 +12,7 @@ Input: `{"files":{"/etc/modprobe.d/99-policy.conf":"blacklist old-fs\ninstall ol
 
 ## Use and output
 
-Install `artifacts/*.whl` and run `modprobe-policy-audit examples/good.json`, or `python -m modprobe_policy_audit examples/good.json`. JSON findings have PASS/FAIL/OPEN, evidence, explanation and counts. Exit codes: PASS 0, FAIL 1, ERROR 2, OPEN 3. Incomplete/unsupported evidence cannot produce exit 0. Input: regular non-symlink unchanged file, 2 MiB maximum, 32 JSON layers, 100000 nodes, no duplicate keys/nonfinite values; findings cap 20000. Each project is independently packaged with no external runtime dependency.
+Install the matching wheel from the [v0.1.2 Release](https://github.com/dhtfish-98/ModprobePolicyAudit/releases/tag/v0.1.2) and run `modprobe-policy-audit examples/good.json`, or `python -m modprobe_policy_audit examples/good.json`. JSON findings have PASS/FAIL/OPEN, evidence, explanation and counts. Exit codes: PASS 0, FAIL 1, ERROR 2, OPEN 3. Incomplete/unsupported evidence cannot produce exit 0. Input: regular non-symlink unchanged file, 2 MiB maximum, 32 JSON layers, 100000 nodes, no duplicate keys/nonfinite values; findings cap 20000. Each project is independently packaged with no external runtime dependency.
 
 ## Verification and limits
 
